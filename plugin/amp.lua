@@ -8,7 +8,7 @@ local function setup_amp_agent()
       callback = function()
         -- Add syntax highlighting for @ paths
         vim.cmd([[syntax match ampPath /@[A-Za-z0-9._/\-]\+/ containedin=ALL]])
-        vim.cmd([[highlight default link ampPath Constant]])
+        vim.cmd([[highlight default link ampPath Include]])
       end,
     })
   end
